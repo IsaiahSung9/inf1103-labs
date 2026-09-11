@@ -9,7 +9,7 @@ while True:
         failed_entry+=1
         continue
     #quit statement
-    if quantity.lower()=="quit":
+    elif quantity.lower()=="quit":
         break
      #converts quantity to integer
     quantity=int(quantity)
@@ -18,7 +18,6 @@ while True:
     if inventory>500:
         print("ALERT! U have exceeded 500 units. OVERSTOCK!")
         break
-    else:
-        continue
-print(inventory)
-print(failed_entry)
+#print total units and failed entries
+print("Total units processed: "+str(inventory))
+print("Number of failed/rejected entries: "+str(failed_entry))
