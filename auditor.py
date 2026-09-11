@@ -9,3 +9,7 @@ while True:
     #quit statement
     if quantity.lower()=="quit":
         break
+     #converts quantity to integer
+    quantity=int(quantity)
+    inventory+=quantity
+print(inventory)
