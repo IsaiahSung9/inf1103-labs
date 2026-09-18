@@ -24,3 +24,9 @@ def calculate_tax(amount):
     # Calculate 10% tax for this delivery
     tax = amount * 0.10
     return tax
+
+
+def generate_report(total_units, failed_attempts):
+    # Print final report
+    print("Total units processed: " + str(total_units))
+    print("Number of failed/rejected entries: " + str(failed_attempts))
