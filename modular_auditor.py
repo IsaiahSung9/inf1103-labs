@@ -13,3 +13,8 @@ def get_valid_input():
 
     # Convert quantity to integer
     return int(quantity)
+
+def process_delivery(current_total, new_value):
+    # Add delivery to current inventory
+    new_total = current_total + new_value
+    return new_total
